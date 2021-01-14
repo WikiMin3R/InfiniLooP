@@ -1,0 +1,2 @@
+debian/bin/infiniloopd usr/bin
+src/infiniloopd usr/lib/infiniloop

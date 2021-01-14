@@ -1,0 +1,7 @@
+Raise the optional fee rate to prevent dust attacks / InfiniLooP
+
+To prevent dust attacks, you should add 
+
+paytxfee=0.001 
+
+to your infiniloop.conf

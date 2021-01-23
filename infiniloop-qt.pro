@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = infiniloop-qt
-VERSION = 1.2.5.2
+VERSION = 1.2.5.5
 INCLUDEPATH += src src/json src/qt
 QT += network
 DEFINES += ENABLE_WALLET

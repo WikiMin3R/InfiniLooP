@@ -1,0 +1,65 @@
+************************
+* (c) 2021 EWMCI, LLC. *
+************************
+
+==================================================================
+INSTRUCTIONS FOR COMPILING THE InfiniLooP Daemon on Ubuntu 20.04:
+
+Brief description / Statement of need: Multiple users noted difficulty compiling the daemon code on Ubuntu 20.04
+This prompted us to develop a quick guide on how to compile InfiniLooP 1.2.5.5 on Ubuntu 20.04 and similar OS platforms
+Note: There is NO GUARANTEE that this will work 100% of the time, and the user must be experienced enought for "compiling" in general
+==================================================================
+GUIDE STARTS HERE:
+
+1) Make InfiniLooP folder in /home directory
+
+2) Download InfiniLooP 1.2.5.5 source from GitHub
+
+3) Download and deploy eCoinCore depends into your InfiniLooP folder
+[here] https://github.com/Canada-eCoin/eCoinCore/tree/master/depends
+[best download full eCoinCore ZIP here] https://github.com/Canada-eCoin/eCoinCore/archive/master.zip
+[then extract depends]
+
+4) Note your directory structure where everything is – This will be important a few steps from now
+[if you are unsure, you can open file explorer in Ubuntu and right-click then “properties” to get a path for a particular file or folder]
+
+5) Do some reading from the eCoinCore depends repo: https://github.com/Canada-eCoin/eCoinCore/blob/master/depends/README.md
+
+6) Then go do the depends folder that you decompressed into your InfiniLooP folder
+[If you are in terminal already, you are set; If you are in explorer, then right-click + “open in terminal”]
+
+7) In the newly opened terminal you should be in a folder ~/InfiniLooP/depends
+
+8) type “make” <ENTER>
+--== NOW WAIT TILL EVERYTHING COMPILES ==--== WILL BE A WHILE ==--
+
+9) Ok – Now that it’s all compiled, time to go to work compiling… first the daemon (infiniloopd):
+	[a] Go to /InfiniLooP/src
+	[b] Open “makefile.unix” using “sudo gedit makefile.unix”
+	[c] scroll down to text “DEFS=-DBOOST_SPIRIT_THREADSAFE”
+	[d] Right below that line, insert the following lines (note – exact path should be as outliend above in #4):
+
+	BOOST_INCLUDE_PATH=/[see #4 above for path]/x86_64-pc-linux-gnu/include BOOST_LIB_PATH=/[see #4 above for path]/x86_64-pc-linux-gnu/lib BDB_INCLUDE_PATH=/[see #4 above for path]/x86_64-pc-linux-gnu/include BDB_LIB_PATH=/[see #4 above for path]/x86_64-pc-linux-gnu/lib OPENSSL_INCLUDE_PATH=/[see #4 above for path]/x86_64-pc-linux-gnu/include OPENSSL_LIB_PATH=/[see #4 above for path]/x86_64-pc-linux-gnu/lib
+
+10) Now save the document, but do not close it… there are more modifications required:
+	[a] Scroll down till you see the following, starting with “LIBS += \ ” and change it so it looks 	EXACTLY as shown below (basically replace “$(BOOT_LIB_SUFFIX)” with “-mt” as 	shown):
+
+	LIBS += \ 
+	  -Wl,-B$(LMODE) \ 
+		-l boost_system-mt \ 
+		-l boost_filesystem-mt \ 
+		-l boost_program_options-mt \ 
+		-l boost_thread-mt \ 
+		-l db_cxx$(BDB_LIB_SUFFIX) \ 
+		-l ssl \ 
+		-l crypto
+
+11) So far, so good… now let’s make the daemon
+
+	Type: “make -f makefile.unix”
+	And wait till all is done…
+	And voila… you should have the following new file in your /src directory:
+		“infiniloopd”
+	That’s the daemon… 
+
+==================================================================

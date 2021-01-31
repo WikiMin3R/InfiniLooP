@@ -16,11 +16,11 @@
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
 Copyright © 2014 The BlackCoin developers
-Copyright © 2018-2020 EWMCI, LLC.</source>
+Copyright © 2018-2021 EWMCI, LLC.</source>
         <translation>Copyright © 2009-2014 Les développeurs Bitcoin
 Copyright © 2012-2014 Les développeurs NovaCoin
 Copyright © 2014 Les développeurs BlackCoin
-Copyright © 2018-2020 EWMCI, LLC.</translation>
+Copyright © 2018-2021 EWMCI, LLC.</translation>
     </message>
     <message>
         <location line="+15"/>

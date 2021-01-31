@@ -90,6 +90,7 @@ public:
 		vSeeds.push_back(CDNSSeedData("primary-il8p.transcenders.ws", "62.171.189.175"));        
 		vSeeds.push_back(CDNSSeedData("secondary-il8p.transcenders.ws", "207.180.208.187"));        
 		vSeeds.push_back(CDNSSeedData("tertiary-il8p.transcenders.ws", "95.111.247.164"));
+	    	vSeeds.push_back(CDNSSeedData("62.171.161.79"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 33);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 85);

@@ -39,7 +39,12 @@ GUIDE STARTS HERE:
 	[c] scroll down to text “DEFS=-DBOOST_SPIRIT_THREADSAFE”
 	[d] Right below that line, insert the following lines (note – exact path should be as outliend above in #4):
 
-	BOOST_INCLUDE_PATH=/[see #4 above for path]/x86_64-pc-linux-gnu/include BOOST_LIB_PATH=/[see #4 above for path]/x86_64-pc-linux-gnu/lib BDB_INCLUDE_PATH=/[see #4 above for path]/x86_64-pc-linux-gnu/include BDB_LIB_PATH=/[see #4 above for path]/x86_64-pc-linux-gnu/lib OPENSSL_INCLUDE_PATH=/[see #4 above for path]/x86_64-pc-linux-gnu/include OPENSSL_LIB_PATH=/[see #4 above for path]/x86_64-pc-linux-gnu/lib
+	  BOOST_INCLUDE_PATH=/[see #4 above for path]/x86_64-pc-linux-gnu/include 
+	  BOOST_LIB_PATH=/[see #4 above for path]/x86_64-pc-linux-gnu/lib 
+	  BDB_INCLUDE_PATH=/[see #4 above for path]/x86_64-pc-linux-gnu/include 
+	  BDB_LIB_PATH=/[see #4 above for path]/x86_64-pc-linux-gnu/lib 
+	  OPENSSL_INCLUDE_PATH=/[see #4 above for path]/x86_64-pc-linux-gnu/include 
+	  OPENSSL_LIB_PATH=/[see #4 above for path]/x86_64-pc-linux-gnu/lib
 
 10) Now save the document, but do not close it… there are more modifications required:
 	[a] Scroll down till you see the following, starting with “LIBS += \ ” and change it so it looks 	EXACTLY as shown below (basically replace “$(BOOT_LIB_SUFFIX)” with “-mt” as 	shown):

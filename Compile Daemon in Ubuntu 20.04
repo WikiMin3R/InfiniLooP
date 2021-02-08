@@ -67,6 +67,8 @@ GUIDE STARTS HERE:
 		“infiniloopd”
 	That’s the daemon… 
 
-SPECIAL NOTE: If any errors related to "leveldb" emerge during the compilation process, please try this procedure: [1] Go to your 'src/leveldb' directory; 
-[2] open terminal (if not in terminal already) and type "make clean" <ENTER>; [3] go back to your 'src' folder and repeat "make -f makefile.unix"
+SPECIAL NOTE: If any errors related to "leveldb" / PIE appear during the compilation process, please try this procedure: 
+[1] Go to your 'src/leveldb' directory; 
+[2] open terminal (if not in terminal already) and type "make clean" <ENTER>; 
+[3] go back to your 'src' folder and repeat "make -f makefile.unix"
 ==================================================================

@@ -142,7 +142,7 @@ def copydata(settings, il8pindex, il8pset):
 		il8p_hdr = rawblock[:80]
 
 		hash_str = 0
-		if il8pCount > 319000:
+		if il8pCount > 999319000:
 			hash_str = calc_hash_str(il8p_hdr)
 		else:
 			hash_str = calc_scrypt_hash_str(il8p_hdr)

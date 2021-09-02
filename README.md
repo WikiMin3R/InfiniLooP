@@ -1,3 +1,5 @@
+[MANDATORY UPDATE]
+
 New in InfiniLooP v1.2.6.1:
 1) Updated checkpoints, up to block 318,599
 2) Block reward reduction from 1.5 to 0.75 (based on dedicated supply-demand analysis to optimize supply vs. demand)

@@ -29,7 +29,8 @@ static const int nCheckpointSpan = 500;
         boost::assign::map_list_of
         ( 0000,   uint256("0x000001ed1ed7503c6ef472314d8138b7440ebd0c5c8b539481705032bbed295a") ) // genesis
         ( 7500,  uint256("0x097cb27ca7f98df07fcb5b069f3252f636dc2842a18fdb90dc1c3fca2ac7f462") ) // last pow block
-        ( 27310,  uint256("0xb7195b00e1ae01a42bf43b6469a1a9297265e12daebbbeaa26b15cd5001a1ef4") ) //January 31, 2021 checkpoint
+        ( 27310,  uint256("0xb7195b00e1ae01a42bf43b6469a1a9297265e12daebbbeaa26b15cd5001a1ef4") ) // January 31, 2021 checkpoint
+        ( 318599,  uint256("0xef2c3952ea2a63f40e5a2498f6732386c768f2727021e381f43a26f36efa940e") ) // September 1, 2021 checkpoint
     ;
 
     // TestNet has no checkpoints

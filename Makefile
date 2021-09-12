@@ -585,14 +585,14 @@ Makefile: infini
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exceptions.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/yacc.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf \
-		infinilinx-qt.pro \
+		infiniloop-qt.pro \
 		src/qt/bitcoin.qrc \
 		/usr/lib/x86_64-linux-gnu/libQt5Widgets.prl \
 		/usr/lib/x86_64-linux-gnu/libQt5Gui.prl \
 		/usr/lib/x86_64-linux-gnu/libQt5Network.prl \
 		/usr/lib/x86_64-linux-gnu/libQt5DBus.prl \
 		/usr/lib/x86_64-linux-gnu/libQt5Core.prl
-	$(QMAKE) -o Makefile infinilinx-qt.pro
+	$(QMAKE) -o Makefile infiniloop-qt.pro
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/linux.conf:
@@ -652,7 +652,7 @@ Makefile: infini
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exceptions.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/yacc.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf:
-infinilinx-qt.pro:
+infiniloop-qt.pro:
 src/qt/bitcoin.qrc:
 /usr/lib/x86_64-linux-gnu/libQt5Widgets.prl:
 /usr/lib/x86_64-linux-gnu/libQt5Gui.prl:
@@ -660,7 +660,7 @@ src/qt/bitcoin.qrc:
 /usr/lib/x86_64-linux-gnu/libQt5DBus.prl:
 /usr/lib/x86_64-linux-gnu/libQt5Core.prl:
 qmake: FORCE
-	@$(QMAKE) -o Makefile infinilinx-qt.pro
+	@$(QMAKE) -o Makefile infiniloop-qt.pro
 
 qmake_all: FORCE
 

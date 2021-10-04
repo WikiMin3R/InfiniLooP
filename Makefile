@@ -32,8 +32,8 @@ DEL_DIR       = rmdir
 MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
-DISTNAME      = infiniloop-qt1.2.5.2
-DISTDIR = /home/sps-uni-usr/InfiniLooP/Compiler/build/infiniloop-qt1.2.5.2
+DISTNAME      = infiniloop-qt1.2.6.1
+DISTDIR = /home/sps-uni-usr/InfiniLooP/Compiler/build/infiniloop-qt1.2.6.1
 LINK          = g++
 LFLAGS        = -m64 -fstack-protector-all --param ssp-buffer-size=1 -Wl,-O1
 LIBS          = $(SUBLIBS) -L/usr/X11R6/lib64 -lminiupnpc /home/sps-uni-usr/InfiniLooP/Compiler/src/leveldb/libleveldb.a /home/sps-uni-usr/InfiniLooP/Compiler/src/leveldb/libmemenv.a -lssl -lcrypto -ldb_cxx -lboost_system -lboost_filesystem -lboost_program_options -lboost_thread -lrt -ldl -lQt5Widgets -lQt5Gui -lQt5Network -lQt5DBus -lQt5Core -lpthread -lGL 

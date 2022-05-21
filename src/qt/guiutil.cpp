@@ -462,7 +462,7 @@ void HelpMessageBox::showOrPrint()
 
 void SetBlackThemeQSS(QApplication& app)
 {
-    app.setStyleSheet("QWidget        { background: rgb(3,92,15); }"//this is the color of the entire right sided background - was 41,44,48
+    app.setStyleSheet("QWidget        { background: rgb(3,43,3); }"//this is the color of the entire right sided background - was 41,44,48
                       "QFrame         { border: none; }"
                       "QComboBox      { color: rgb(255,255,255); }"
                       "QComboBox QAbstractItemView::item { color: rgb(255,255,255); }"
@@ -471,10 +471,10 @@ void SetBlackThemeQSS(QApplication& app)
                       "QLineEdit      { background: rgb(63,67,72); color: rgb(255,255,255); border-color: rgb(194,194,194); }"
                       "QTextEdit      { background: rgb(63,67,72); color: rgb(255,255,255); }"
                       "QPlainTextEdit { background: rgb(63,67,72); color: rgb(255,255,255); }"
-                      "QMenuBar       { background: rgb(41,44,48); color: rgb(110,116,126); }"
+                      "QMenuBar       { background: rgb(3,43,3); color: rgb(110,116,126); }"//the first one is top horizontal bar - was 41,44,48
                       "QMenu          { background: rgb(30,32,36); color: rgb(222,222,222); }"
                       "QMenu::item:selected { background-color: rgb(48,140,198); }"
-                      "QLabel         { color: rgb(120,127,139); }"
+                      "QLabel         { color: rgb(255,255,240); }"//this one controls text in info box (Debug & About Qt) - was 120,127,139
                       "QScrollBar     { color: rgb(255,255,255); }"
                       "QCheckBox      { color: rgb(120,127,139); }"
                       "QRadioButton   { color: rgb(120,127,139); }"

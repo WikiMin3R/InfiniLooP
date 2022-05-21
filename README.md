@@ -1,9 +1,8 @@
-[MANDATORY UPDATE]
+[RECOMMENDED UPDATE]
 
 New in InfiniLooP v1.2.6.1:
-1) Updated checkpoints, up to block 318,599
-2) Block reward reduction from 1.5 to 0.75 (based on dedicated supply-demand analysis to optimize supply vs. demand)
-3) Fixed old "BlackCoin bug" associated with an old fork that was hardwired/inserted into the original code
+1) Updated checkpoints, up to block 675,001
+2) Added a list of hardwired IPv4 nodes for enhanced connectivity
 
 Node lists can be pasted into your InfiniLooP.conf and are available at:
 1) https://chainz.cryptoid.info/il8p/#!network

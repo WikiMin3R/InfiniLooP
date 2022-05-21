@@ -1,6 +1,6 @@
 [RECOMMENDED UPDATE]
 
-New in InfiniLooP v1.2.6.1:
+New in InfiniLooP v1.2.7.1:
 1) Updated checkpoints, up to block 675,001
 2) Added a list of hardwired IPv4 nodes for enhanced connectivity
 

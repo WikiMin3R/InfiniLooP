@@ -3,6 +3,7 @@
 New in InfiniLooP v1.2.7.1:
 1) Updated checkpoints, up to block 675,001
 2) Added a list of hardwired IPv4 nodes for enhanced connectivity
+3) New original icons and background color Qt Wallet theme added
 
 Node lists can be pasted into your InfiniLooP.conf and are available at:
 1) https://chainz.cryptoid.info/il8p/#!network

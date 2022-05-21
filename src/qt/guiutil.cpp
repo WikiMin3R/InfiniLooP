@@ -462,7 +462,7 @@ void HelpMessageBox::showOrPrint()
 
 void SetBlackThemeQSS(QApplication& app)
 {
-    app.setStyleSheet("QWidget        { background: rgb(41,44,48); }"
+    app.setStyleSheet("QWidget        { background: rgb(3,92,15); }"//this is the color of the entire right sided background - was 41,44,48
                       "QFrame         { border: none; }"
                       "QComboBox      { color: rgb(255,255,255); }"
                       "QComboBox QAbstractItemView::item { color: rgb(255,255,255); }"

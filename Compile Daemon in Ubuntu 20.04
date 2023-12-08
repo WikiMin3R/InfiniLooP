@@ -6,7 +6,7 @@
 INSTRUCTIONS FOR COMPILING THE InfiniLooP Daemon on Ubuntu 20.04:
 
 Brief description / Statement of need: Multiple users noted difficulty compiling the daemon code on Ubuntu 20.04
-This prompted us to develop a quick guide on how to compile InfiniLooP 1.2.5.5 on Ubuntu 20.04 and similar OS platforms
+This prompted us to develop a quick guide on how to compile InfiniLooP 1.2.5.5 (or higher) on Ubuntu 20.04 and similar OS platforms
 Note: There is NO GUARANTEE that this will work 100% of the time, and the user must be experienced enought for "compiling" in general
 ==================================================================
 GUIDE STARTS HERE:
